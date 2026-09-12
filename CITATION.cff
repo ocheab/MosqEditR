@@ -1,0 +1,19 @@
+﻿cff-version: 1.2.0
+message: "If you use MosqEditR, please cite the software and associated manuscript."
+title: "MosqEditR: Explainable Prioritization of Gene-Editing Targets in Anopheles gambiae"
+type: software
+version: 0.1.0
+date-released: 2026-09-12
+authors:
+  - family-names: "George"
+    given-names: "Oche Ambrose"
+repository-code: "https://github.com/ocheab/MosqEditR"
+url: "https://github.com/ocheab/MosqEditR"
+license: MIT
+keywords:
+  - Anopheles gambiae
+  - CRISPR
+  - positive-unlabeled learning
+  - vector control
+  - target prioritization
+

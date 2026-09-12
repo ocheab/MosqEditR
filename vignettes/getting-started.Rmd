@@ -1,0 +1,47 @@
+---
+title: "Getting started with MosqEditR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with MosqEditR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+MosqEditR separates reusable scoring utilities from the manuscript analysis.
+
+## Score three illustrative candidates
+
+```{r}
+library(MosqEditR)
+
+z <- mosqedit_integrated_score(
+  biology = c(0.99, 0.82, 0.61),
+  pu = c(0.98, 0.75, 0.80),
+  crispr = c(0.95, 0.91, 0.40)
+)
+z
+
+mosqedit_rank(z$adjusted_score, c("A", "B", "C"))
+```
+
+## Inspect the frozen manuscript example
+
+```{r}
+head(mosqedit_example_candidates())
+```
+
+## Initialize a reproducible analysis workspace
+
+```{r, eval=FALSE}
+mosqedit_init("MosqEditR-analysis")
+setwd("MosqEditR-analysis")
+mosqedit_pipeline_steps()
+mosqedit_install_pipeline_deps()
+mosqedit_run_step("01")
+```
+
+The acquisition and modelling workflow has additional package requirements and may download public source data. Population-genomic integration is intentionally conditional on real site-level population metrics.

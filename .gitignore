@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+*.Rproj
+.DS_Store
+analysis/data_raw/
+analysis/data_processed/
+analysis/logs/
+analysis/release/
+release/

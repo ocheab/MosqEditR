@@ -1,0 +1,9 @@
+\
+^\.github$
+^README_GITHUB_SETUP\.md$
+^analysis$
+^CODE_OF_CONDUCT\.md$
+^CONTRIBUTING\.md$
+^_pkgdown\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$

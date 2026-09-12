@@ -1,0 +1,106 @@
+﻿MosqEditR/
+â”œâ”€â”€ .github/
+â”‚   â””â”€â”€ workflows/
+â”‚       â”œâ”€â”€ pkgdown.yaml
+â”‚       â””â”€â”€ R-CMD-check.yaml
+â”œâ”€â”€ analysis/
+â”‚   â”œâ”€â”€ config/
+â”‚   â”œâ”€â”€ manuscript/
+â”‚   â”‚   â””â”€â”€ original_source_snapshot/
+â”‚   â”‚       â”œâ”€â”€ 00_setup.R
+â”‚   â”‚       â”œâ”€â”€ 01_acquire_genome_annotation.R
+â”‚   â”‚       â”œâ”€â”€ 02_acquire_mozatlas_expression.R
+â”‚   â”‚       â”œâ”€â”€ 03_acquire_orthology_phenotypes.R
+â”‚   â”‚       â”œâ”€â”€ 04_acquire_ag1000g_variation.R
+â”‚   â”‚       â”œâ”€â”€ 05_crispr_editability.R
+â”‚   â”‚       â”œâ”€â”€ 06_build_feature_matrix.R
+â”‚   â”‚       â”œâ”€â”€ 07_model_training.R
+â”‚   â”‚       â”œâ”€â”€ 08_validation_and_ranking.R
+â”‚   â”‚       â”œâ”€â”€ 09_explainability.R
+â”‚   â”‚       â”œâ”€â”€ 10_figures_tables.R
+â”‚   â”‚       â”œâ”€â”€ 11_update_manuscript_tables.R
+â”‚   â”‚       â”œâ”€â”€ 99_capture_session.R
+â”‚   â”‚       â”œâ”€â”€ ag1000g_gene_variation.py
+â”‚   â”‚       â”œâ”€â”€ helpers.R
+â”‚   â”‚       â”œâ”€â”€ README_RUNTIME_REQUIREMENTS.md
+â”‚   â”‚       â””â”€â”€ run_all.R
+â”‚   â”œâ”€â”€ README-assets/
+â”‚   â”œâ”€â”€ analysis_config.yml
+â”‚   â”œâ”€â”€ ANALYSIS_STATUS.md
+â”‚   â”œâ”€â”€ README.md
+â”‚   â”œâ”€â”€ renv.lock
+â”‚   â””â”€â”€ RUN_INSTRUCTIONS.md
+â”œâ”€â”€ data-raw/
+â”‚   â””â”€â”€ README.md
+â”œâ”€â”€ inst/
+â”‚   â”œâ”€â”€ extdata/
+â”‚   â”‚   â”œâ”€â”€ example_top20_candidates.csv
+â”‚   â”‚   â””â”€â”€ landmark_targets.csv
+â”‚   â”œâ”€â”€ pipeline/
+â”‚   â”‚   â””â”€â”€ R/
+â”‚   â”‚       â”œâ”€â”€ 00_setup.R
+â”‚   â”‚       â”œâ”€â”€ 01_acquire_genome_annotation.R
+â”‚   â”‚       â”œâ”€â”€ 02_acquire_mozatlas_expression.R
+â”‚   â”‚       â”œâ”€â”€ 03_acquire_orthology_phenotypes.R
+â”‚   â”‚       â”œâ”€â”€ 04_preliminary_genomewide_ranking.R
+â”‚   â”‚       â”œâ”€â”€ 05a_crispr_reference_scan.R
+â”‚   â”‚       â”œâ”€â”€ 05b_crispr_exon_aware_validation.R
+â”‚   â”‚       â”œâ”€â”€ 06_build_feature_matrix.R
+â”‚   â”‚       â”œâ”€â”€ 07_build_leakage_safe_modelling_sets.R
+â”‚   â”‚       â”œâ”€â”€ 08_train_bagged_pu_models.R
+â”‚   â”‚       â”œâ”€â”€ 09_integrate_pu_crispr_final_prioritization.R
+â”‚   â”‚       â”œâ”€â”€ 10_explain_final_ranking_and_figures.R
+â”‚   â”‚       â”œâ”€â”€ 11_model_specific_explainability.R
+â”‚   â”‚       â”œâ”€â”€ 12_bootstrap_rank_uncertainty.R
+â”‚   â”‚       â”œâ”€â”€ 13_freeze_population_validation_panel.R
+â”‚   â”‚       â”œâ”€â”€ 14_integrate_population_genomics.R
+â”‚   â”‚       â”œâ”€â”€ 15_ablation_and_validation.R
+â”‚   â”‚       â”œâ”€â”€ 16_build_publication_tables_and_figures.R
+â”‚   â”‚       â”œâ”€â”€ 17_freeze_reproducible_release_bundle.R
+â”‚   â”‚       â””â”€â”€ helpers.R
+â”‚   â”œâ”€â”€ templates/
+â”‚   â”‚   â”œâ”€â”€ metadata/
+â”‚   â”‚   â”‚   â”œâ”€â”€ data_dictionary.csv
+â”‚   â”‚   â”‚   â”œâ”€â”€ landmark_targets.csv
+â”‚   â”‚   â”‚   â”œâ”€â”€ population_metrics_template_schema.csv
+â”‚   â”‚   â”‚   â”œâ”€â”€ published_benchmark_data.csv
+â”‚   â”‚   â”‚   â””â”€â”€ source_provenance.csv
+â”‚   â”‚   â””â”€â”€ analysis_config.yml
+â”‚   â””â”€â”€ CITATION
+â”œâ”€â”€ man/
+â”‚   â”œâ”€â”€ mosqedit_example_candidates.Rd
+â”‚   â”œâ”€â”€ mosqedit_extdata.Rd
+â”‚   â”œâ”€â”€ mosqedit_init.Rd
+â”‚   â”œâ”€â”€ mosqedit_integrated_score.Rd
+â”‚   â”œâ”€â”€ mosqedit_percentile.Rd
+â”‚   â”œâ”€â”€ mosqedit_pipeline_steps.Rd
+â”‚   â”œâ”€â”€ mosqedit_rank.Rd
+â”‚   â”œâ”€â”€ mosqedit_run.Rd
+â”‚   â”œâ”€â”€ mosqedit_run_step.Rd
+â”‚   â”œâ”€â”€ mosqedit_tau.Rd
+â”‚   â”œâ”€â”€ mosqedit_validate_project.Rd
+â”‚   â”œâ”€â”€ mosqedit_version.Rd
+â”‚   â””â”€â”€ MosqEditR-package.Rd
+â”œâ”€â”€ R/
+â”‚   â”œâ”€â”€ project.R
+â”‚   â””â”€â”€ utils.R
+â”œâ”€â”€ tests/
+â”‚   â”œâ”€â”€ testthat/
+â”‚   â”‚   â””â”€â”€ test-scoring.R
+â”‚   â””â”€â”€ testthat.R
+â”œâ”€â”€ vignettes/
+â”‚   â””â”€â”€ getting-started.Rmd
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ .Rbuildignore
+â”œâ”€â”€ _pkgdown.yml
+â”œâ”€â”€ CITATION.cff
+â”œâ”€â”€ CODE_OF_CONDUCT.md
+â”œâ”€â”€ CONTRIBUTING.md
+â”œâ”€â”€ DESCRIPTION
+â”œâ”€â”€ LICENSE
+â”œâ”€â”€ LICENSE.md
+â”œâ”€â”€ NAMESPACE
+â”œâ”€â”€ NEWS.md
+â”œâ”€â”€ README.md
+â””â”€â”€ README_GITHUB_SETUP.md
+

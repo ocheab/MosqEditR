@@ -1,0 +1,31 @@
+﻿project: MosqEdit-R Manuscript 1
+build_date: 2026-09-11
+species_primary: Anopheles gambiae
+genome_build: AgamP4
+primary_universe: protein_coding_genes
+secondary_universe: selected_non_coding_landmarks
+random_seed: 20260911
+expression:
+  dataset: GSE21689
+  tissue_specificity_metric: tau
+  pseudocount: 1e-8
+population_genomics:
+  source: MalariaGEN_Ag1000G_Phase3
+  high_frequency_threshold: 0.01
+  populations: all_available_gambiae_coluzzii
+crispr_editability:
+  historical_benchmark: Schmidt_2020
+  DRA_frequency_threshold: 0.01
+modelling:
+  paradigm: bagged_positive_unlabelled_learning
+  base_learner: ranger
+  pu_resamples: 500
+  landmark_targets_excluded_from_training: true
+  top_k: [10, 50, 100]
+validation:
+  landmark_holdout: true
+  metrics: [AUPRC_if_valid_negatives_available, recall_at_k, mean_reciprocal_rank, nDCG, bootstrap_rank_stability]
+audit:
+  allowed_states: [SOURCE, SOURCE_ROUNDED, RECOMPUTED, MODEL, PENDING]
+  manual_model_values_forbidden: true
+

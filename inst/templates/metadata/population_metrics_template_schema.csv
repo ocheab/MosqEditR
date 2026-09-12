@@ -1,0 +1,19 @@
+column_name,description,expected_range_or_type
+population_site_id,Stable Step 13 site identifier,character
+gene_id,AgamP4 gene identifier,character
+population_source_release,Pinned population dataset/release,character
+population_sample_set,Sample-set identifier,character
+population_taxa,Taxon/taxa analyzed,character
+population_accessibility_mask,Mask/accessibility definition,character
+population_n_samples,Number of analyzed mosquitoes,integer >= 1
+population_n_populations,Number of populations,integer >= 1
+population_callable_fraction,Callable/accessibility fraction at target site,0-1
+pam_intact_fraction,Fraction retaining canonical PAM,0-1
+protospacer_exact_match_fraction,Fraction exactly matching 20-nt protospacer,0-1
+target_23bp_exact_match_fraction,Fraction exactly matching protospacer+PAM,0-1
+max_target_variant_alt_af,Maximum alternate-allele frequency across target bases,0-1
+mean_target_heterozygosity_proxy,Mean heterozygosity proxy across target bases,0-1
+populations_with_target_23bp_exact_match_ge_0_95,Populations with >=95% exact target match,integer
+populations_assessed,Total populations assessed,integer
+population_target_site_robustness_score,Predeclared site robustness score from real data,0-1
+population_metric_status,Assessment status,character

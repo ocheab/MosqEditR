@@ -1,0 +1,10 @@
+citHeader("To cite MosqEditR in publications, please use:")
+
+bibentry(
+  bibtype = "Manual",
+  title = "MosqEditR: Explainable Prioritization of Gene-Editing Targets in Anopheles gambiae",
+  author = person("MosqEdit-R", "Team"),
+  year = "2026",
+  note = "R package version 0.1.0. Replace this entry with the final software/manuscript DOI before public release.",
+  url = "https://github.com/ocheab/MosqEditR"
+)

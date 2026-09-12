@@ -1,0 +1,7 @@
+gene_id,gene_name,species_context,strategy,evidence,reference,doi,planned_use,analysis_maturity
+AGAP005958,female-fertility locus,Anopheles gambiae,suppression,female sterility after disruption,Hammond et al. 2016,10.1038/nbt.3439,training/hold-out landmark,SOURCE
+AGAP011377,female-fertility locus,Anopheles gambiae,suppression,female sterility after disruption,Hammond et al. 2016,10.1038/nbt.3439,training/hold-out landmark,SOURCE
+AGAP007280,nudel,Anopheles gambiae,suppression,female sterility; early gene-drive target,Hammond et al. 2016,10.1038/nbt.3439,training/hold-out landmark,SOURCE
+AGAP004050,doublesex,Anopheles gambiae,suppression,female-specific disruption; complete cage population suppression,Kyrou et al. 2018; Morianou et al. 2026,10.1038/nbt.4245;10.1371/journal.pbio.3003879,strict external hold-out landmark,SOURCE
+AGAP028779,mir-184,Anopheles gambiae,dual suppression-modification,reduced lifespan/fitness; high inheritance bias; effector cargo demonstration,Hoermann et al. 2025,10.1038/s41467-025-58954-5,secondary ncRNA benchmark,SOURCE
+AGAP007031,FREP1,Anopheles gambiae ortholog,modification,parasite-interaction locus; protective allele demonstrated in An. stephensi,Li et al. 2025; earlier An. gambiae association literature,10.1038/s41586-025-09283-6,cross-species secondary benchmark,SOURCE

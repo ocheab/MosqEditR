@@ -1,0 +1,20 @@
+metric,value,unit,source,source_identifier,analysis_maturity
+MozAtlas samples,60,samples,Baker et al. 2011,10.1186/1471-2164-12-296,SOURCE
+MozAtlas adult tissue groups,15,tissue/sex groups,Baker et al. 2011,10.1186/1471-2164-12-296,SOURCE
+MozAtlas annotated genes profiled,82,percent (approx.),Baker et al. 2011,10.1186/1471-2164-12-296,SOURCE
+Ag1000G Phase 3 wild-caught mosquitoes,2784,mosquitoes,MalariaGEN Ag1000G Phase 3 / Morianou et al. 2026 methods,10.1371/journal.pbio.3003879,SOURCE
+Ag1000G Phase 3 countries,19,countries,MalariaGEN Ag1000G Phase 3,https://www.malariagen.net/project/ag1000g/,SOURCE
+AgamP4.11 protein-coding genes in Schmidt survey,12562,genes,Schmidt et al. 2020,10.1038/s41467-020-15204-0,SOURCE
+Protein-coding genes with >=1 potential Cas9 target,97.2,percent,Schmidt et al. 2020,10.1038/s41467-020-15204-0,SOURCE
+Protein-coding genes with >=1 good target at DRA <1%,90.0,percent (authors report ~90%),Schmidt et al. 2020,10.1038/s41467-020-15204-0,SOURCE_ROUNDED
+Hammond female-sterility loci experimentally validated,3,genes,Hammond et al. 2016,10.1038/nbt.3439,SOURCE
+Hammond predicted P(sterile)>=0.5,271,genes,Hammond et al. 2016,10.1038/nbt.3439,SOURCE
+Hammond drive transmission range minimum,91.4,percent,Hammond et al. 2016,10.1038/nbt.3439,SOURCE
+Hammond drive transmission range maximum,99.6,percent,Hammond et al. 2016,10.1038/nbt.3439,SOURCE
+doublesex drive prevalence reached,100,percent,Kyrou et al. 2018,10.1038/nbt.4245,SOURCE
+doublesex generations to 100% prevalence lower,7,generations,Kyrou et al. 2018,10.1038/nbt.4245,SOURCE
+doublesex generations to 100% prevalence upper,11,generations,Kyrou et al. 2018,10.1038/nbt.4245,SOURCE
+Morianou R1 rate among EJ alleles beta,0.0016,proportion,Morianou et al. 2026,10.1371/journal.pbio.3003879,SOURCE
+Morianou R3 rate among EJ alleles gamma,0.0025,proportion,Morianou et al. 2026,10.1371/journal.pbio.3003879,SOURCE
+Morianou functionally resistant mutations among EJ alleles,0.0041,proportion,Morianou et al. 2026,10.1371/journal.pbio.3003879,SOURCE
+Morianou estimated resistant mutations among drive-carrier offspring,7.2e-05,proportion (approx.),Morianou et al. 2026,10.1371/journal.pbio.3003879,SOURCE

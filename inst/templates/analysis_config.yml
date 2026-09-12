@@ -1,0 +1,33 @@
+﻿project: MosqEdit-R Manuscript 1
+species_primary: Anopheles gambiae
+genome_build: AgamP4
+ensembl_metazoa_release: 63
+primary_universe: all_AGAP_gene_like_loci
+random_seed: 20260911
+expression:
+  dataset: GSE21689
+  tissue_specificity_metric: tau
+orthology:
+  compara_release: 116
+  flybase_release: FB2026_02
+crispr_editability:
+  nuclease: SpCas9
+  pam: NGG
+  protospacer_length: 20
+  reference_sequence_only: true
+modelling:
+  paradigm: bagged_positive_unlabeled_learning
+  outer_folds: 5
+  repeats: 3
+  bags: 10
+  benchmark_targets_excluded_from_training: true
+integration:
+  biology_weight: 0.50
+  pu_weight: 0.30
+  crispr_weight: 0.20
+  completeness_floor: 0.80
+population_genomics:
+  role: targeted_second_stage_validation
+  status: pending_real_data
+  never_impute_or_fabricate: true
+
