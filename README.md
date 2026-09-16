@@ -83,21 +83,21 @@ Later stages require their upstream files. Several acquisition steps require int
 
 ```text
 MosqEditR/
-â”œâ”€â”€ DESCRIPTION
-â”œâ”€â”€ NAMESPACE
-â”œâ”€â”€ R/                         # installable package functions
-â”œâ”€â”€ man/                       # help pages
-â”œâ”€â”€ tests/testthat/            # unit tests
-â”œâ”€â”€ vignettes/                 # tutorials
-â”œâ”€â”€ inst/
-â”‚   â”œâ”€â”€ extdata/               # small examples/landmarks
-â”‚   â”œâ”€â”€ pipeline/R/            # manuscript workflow templates
-â”‚   â””â”€â”€ templates/             # config + metadata templates
-â”œâ”€â”€ analysis/                  # manuscript reproducibility material
-â”œâ”€â”€ data-raw/                  # package-data preparation scripts
-â”œâ”€â”€ .github/workflows/         # R CMD check + pkgdown
-â”œâ”€â”€ CITATION.cff
-â”œâ”€â”€ CONTRIBUTING.md
+DESCRIPTION
+NAMESPACE
+R/                         # installable package functions
+man/                       # help pages
+tests/testthat/            # unit tests
+vignettes/                 # tutorials
+inst/
+extdata/                   # small examples/landmarks
+pipeline/R/                # manuscript workflow templates
+templates/                 # config + metadata templates
+analysis/                  # manuscript reproducibility material
+data-raw/                  # package-data preparation scripts
+.github/workflows/         # R CMD check + pkgdown
+CITATION.cff
+CONTRIBUTING.md
 â””â”€â”€ _pkgdown.yml
 ```
 
