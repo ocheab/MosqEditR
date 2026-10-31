@@ -529,6 +529,20 @@ step05 <- fread(
     STEP05_EDITABILITY_FILE
 )
 
+# Step 05b must start from the unmodified Step 05 gene-level input.
+# The final compatibility alias replaces STEP05_EDITABILITY_FILE, so a
+# subsequent run must regenerate Step 05 first rather than merge into
+# already exon-aware columns and silently change the result.
+if (any(c("step05b_status", "exon_aware_abundance_component",
+          "crispr_exon_aware_reference_editability_score") %in% names(step05))) {
+    stop(
+        "Step 05 input already contains Step 05b-derived columns. ",
+        "Restore the pristine Step 05 table (or rerun Step 05) in a working ",
+        "directory before executing Step 05b. Frozen outputs must not be ",
+        "overwritten.",
+        call. = FALSE
+    )
+}
 
 required_guide_fields <- c(
     "gene_id",
@@ -1566,11 +1580,15 @@ editability[
 # 15. Exon-aware reference editability score
 # -----------------------------------------------------------------------------
 #
-# More conservative than Step 05:
-#   40% functional-region guide abundance
+# Frozen-output-concordant exon-aware reference-editability formulation:
+#   35% functional-region guide abundance
 #   25% multiplexability (saturates at 4)
-#   20% transcript coverage by functional-region guides
+#   25% transcript coverage by functional-region guides
 #   15% best GC balance
+# The 35/25/25/15 formulation reconstructs all 205 frozen gene-level scores
+# (maximum absolute difference 6.66e-16). See scoring reconciliation notes.
+# The historically distributed script used 40/25/20/15; both versions must
+# remain auditable through the version-controlled repository history.
 #
 # For coding genes, "functional region" = CDS.
 # For genes without CDS, "functional region" = noncoding exon.
@@ -1683,11 +1701,11 @@ editability[
 editability[
     ,
     crispr_exon_aware_reference_editability_score :=
-        0.40 *
+        0.35 *
         exon_aware_abundance_component +
         0.25 *
         exon_aware_multiplex_component +
-        0.20 *
+        0.25 *
         exon_aware_transcript_coverage_component +
         0.15 *
         exon_aware_gc_balance_component
@@ -1931,8 +1949,8 @@ provenance <- data.table(
         ),
 
         paste0(
-            "40% functional-region guide abundance, 25% multiplexability, ",
-            "20% transcript coverage, 15% best GC balance. This is an ",
+            "35% functional-region guide abundance, 25% multiplexability, ",
+            "25% transcript coverage, 15% best GC balance. This is an ",
             "explainable reference-editability score, not a probability of ",
             "successful editing."
         ),
@@ -2198,16 +2216,52 @@ log_step(
 # -----------------------------------------------------------------------------
 # MosqEditR package compatibility aliases
 # -----------------------------------------------------------------------------
-# The frozen manuscript pipeline subsequently expects the authoritative
-# exon-aware outputs under the Step-05 canonical filenames.
-file.copy(
+# Downstream scripts expect the exon-aware table under the Step-05 canonical
+# filename. Preserve the upstream Step 05 gene table before replacing it.
+# Run the pipeline only in a fresh *working copy*, never in the frozen archive.
+PRE05B_BACKUP_FILE <- "data_processed/05_crispr_editability_pre05b.csv"
+if (file.exists(PRE05B_BACKUP_FILE)) {
+    stop(
+        "A pre-Step05b backup already exists: ", PRE05B_BACKUP_FILE,
+        ". Use a new working directory to avoid overwriting audit evidence.",
+        call. = FALSE
+    )
+}
+if (!isTRUE(file.copy(
+    STEP05_EDITABILITY_FILE,
+    PRE05B_BACKUP_FILE,
+    overwrite = FALSE
+))) {
+    stop("Could not preserve the original Step 05 editability input.",
+         call. = FALSE)
+}
+if (!isTRUE(file.copy(
     GUIDE_OUTPUT_FILE,
     "data_processed/05_crispr_candidate_sites_exon_aware.csv",
     overwrite = TRUE
-)
-file.copy(
+))) {
+    stop("Could not write exon-aware guide compatibility alias.",
+         call. = FALSE)
+}
+if (!isTRUE(file.copy(
     EDITABILITY_OUTPUT_FILE,
     "data_processed/05_crispr_editability.csv",
     overwrite = TRUE
+))) {
+    stop("Could not write exon-aware editability compatibility alias.",
+         call. = FALSE)
+}
+
+# Refresh checksums after canonical alias replacement. The earlier checksum
+# captures the original Step 05 input, but that path now contains Step 05b
+# output. Both the preserved input and the final alias must be recorded.
+post_alias_files <- unique(c(
+    checksum_files,
+    PRE05B_BACKUP_FILE,
+    "data_processed/05_crispr_candidate_sites_exon_aware.csv"
+))
+write_checksum(
+    post_alias_files[file.exists(post_alias_files)],
+    CHECKSUM_FILE
 )
 
