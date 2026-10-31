@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(data.table); library(ranger)})
 log_step("07", "Training bagged positive-unlabelled target-prioritization model")
 d <- fread("data_processed/master_gene_feature_matrix.csv")
@@ -52,4 +52,3 @@ d[, ensemble_score := ifelse(is.finite(evolutionary_robustness), 0.75*pu_probabi
 d[, analysis_maturity := "MODEL"]
 fwrite(d, "results/candidate_lists/model_scored_genes.csv")
 saveRDS(list(features=features, pred=pred, seed=20260911, B=B), "results/model_bundle.rds")
-

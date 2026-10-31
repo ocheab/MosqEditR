@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 02_acquire_mozatlas_expression.R
 #
 # MosqEdit-R Manuscript 1
@@ -21,7 +21,7 @@
 #   4 biological replicates per group
 #
 # IMPORTANT:
-#   ACPS_1â€“4 are male accessory-gland / Acps samples.
+#   ACPS_1–4 are male accessory-gland / Acps samples.
 #   They are biological tissue samples and MUST NOT be removed as controls.
 #
 # Expression data:

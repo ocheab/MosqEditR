@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(GEOquery); library(Biobase); library(data.table); library(stringr)})
 log_step("02", "Downloading GSE21689/MozAtlas processed expression")
 gse <- getGEO("GSE21689", GSEMatrix=TRUE, getGPL=TRUE)
@@ -52,4 +52,3 @@ if ("expr_ovary" %in% names(gene_expr)) {
 fwrite(gene_expr, "data_processed/02_mozatlas_gene_expression.csv")
 writeLines(paste("expression_scale_decision", expr_scale, sep="\t"), "logs/02_expression_scale.tsv")
 write_checksum("data_processed/02_mozatlas_gene_expression.csv", "logs/02_checksums.tsv")
-

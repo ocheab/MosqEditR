@@ -1,11 +1,11 @@
-﻿# Publishing MosqEditR on GitHub
+# Publishing MosqEditR on GitHub
 
 ## 1. Edit repository metadata first
 
 Replace these placeholders:
 
-- `ocheab` in `DESCRIPTION`, `README.md`, `_pkgdown.yml`, and `CITATION.cff`.
-- `ocheab1@gmail.com` in `DESCRIPTION`.
+- `YOUR_GITHUB_USERNAME` in `DESCRIPTION`, `README.md`, `_pkgdown.yml`, and `CITATION.cff`.
+- `maintainer@example.org` in `DESCRIPTION`.
 - authors/contributors in `DESCRIPTION` and `CITATION.cff`.
 - DOI fields after Zenodo/manuscript DOI assignment.
 - license if MIT is not the agreed project license.
@@ -19,7 +19,7 @@ git init
 git add .
 git commit -m "Initial public MosqEditR package"
 git branch -M main
-git remote add origin https://github.com/ocheab/MosqEditR.git
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/MosqEditR.git
 git push -u origin main
 ```
 
@@ -33,14 +33,14 @@ gh repo create MosqEditR --public --source=. --remote=origin --push
 
 ```r
 install.packages("pak")
-pak::pak("https://github.com/ocheab/MosqEditR")
+pak::pak("YOUR_GITHUB_USERNAME/MosqEditR")
 ```
 
 or:
 
 ```r
 install.packages("remotes")
-remotes::install_github("https://github.com/ocheab/MosqEditR")
+remotes::install_github("YOUR_GITHUB_USERNAME/MosqEditR")
 ```
 
 ## 4. Recommended release workflow
@@ -62,4 +62,3 @@ devtools::check()
 ```
 
 This package bundle was assembled in an environment without an R runtime, so the first GitHub Actions run should be treated as the authoritative package-build check.
-

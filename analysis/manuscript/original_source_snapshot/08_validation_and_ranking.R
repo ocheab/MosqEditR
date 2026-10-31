@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(data.table)})
 log_step("08", "Ranking candidates and landmark hold-out evaluation")
 d <- fread("results/candidate_lists/model_scored_genes.csv")
@@ -16,4 +16,3 @@ d[, bootstrap_rank_median := apply(ranks,1,median,na.rm=TRUE)]
 d[, bootstrap_top50_prob := rowMeans(ranks <= 50, na.rm=TRUE)]
 out <- d[, .(gene_id, ensemble_score, rank, bootstrap_rank_median, bootstrap_top50_prob, analysis_maturity)]
 fwrite(out, "results/candidate_lists/ranked_targets.csv")
-

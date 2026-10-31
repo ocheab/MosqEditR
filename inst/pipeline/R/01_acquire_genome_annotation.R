@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 
 required <- c("data.table", "curl")
 missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
@@ -85,4 +85,3 @@ write_checksum(c(dest, "data_processed/01_gene_annotation.csv", "data_processed/
 
 cat("\nMOSQEDIT-R STEP 01 COMPLETED\nAGAP loci: ", nrow(ann), "\n", sep = "")
 log_step("01", "Annotation acquisition completed")
-

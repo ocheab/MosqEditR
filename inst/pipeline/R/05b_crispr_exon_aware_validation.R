@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 05b_crispr_exon_aware_validation.R
 #
 # MosqEdit-R Manuscript 1
@@ -2210,5 +2210,4 @@ file.copy(
     "data_processed/05_crispr_editability.csv",
     overwrite = TRUE
 )
-
 

@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 16_build_publication_tables_and_figures.R
 # MosqEdit-R Manuscript 1
-# STEP 16 â€” Build manuscript-ready tables, figure manifest, and result extracts
+# STEP 16 — Build manuscript-ready tables, figure manifest, and result extracts
 # PURE R
 # =============================================================================
 
@@ -91,10 +91,10 @@ table1 <- data.table(
         "Step 01",
         "Step 02",
         "Step 03",
-        "Steps 07â€“08",
+        "Steps 07–08",
         "Step 05",
         "Step 12",
-        if (population_available) "Steps 13â€“14" else "Pending"
+        if (population_available) "Steps 13–14" else "Pending"
     ),
     analysis_scope = c(
         "13,845-gene AgamP4 universe",
@@ -407,4 +407,3 @@ cat(
 print(results_snapshot)
 
 log_step("16", "Publication outputs assembled successfully")
-

@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 05_crispr_editability_TARGETED_R.R
 #
 # MosqEdit-R Manuscript 1
@@ -2566,4 +2566,3 @@ log_step(
     "05",
     "Targeted SpCas9 reference-sequence editability completed successfully"
 )
-

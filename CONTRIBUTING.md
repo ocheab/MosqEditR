@@ -1,4 +1,4 @@
-﻿# Contributing
+# Contributing
 
 Issues and pull requests are welcome. For scientific changes, please describe:
 
@@ -8,4 +8,3 @@ Issues and pull requests are welcome. For scientific changes, please describe:
 4. tests or reproducible output demonstrating the change.
 
 Do not commit credentials, restricted data, or fabricated population-genomic metrics.
-

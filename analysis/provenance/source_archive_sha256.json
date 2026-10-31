@@ -1,0 +1,17 @@
+{
+  "Github_package_as_received": {
+    "file": "MosqEditR_GitHub_Installable_Package (1)(1).zip",
+    "size_bytes": 181189,
+    "sha256": "ae25bee937fdeaab8c6eae8f8b9377793cc1a9f81c3f6ed8b3b89fa4d3975ebe"
+  },
+  "Phase2_raw_processed_as_received": {
+    "file": "MosqEditR_Phase2_Targeted_Extraction1.zip",
+    "size_bytes": 122013869,
+    "sha256": "4df8f44edecd3eb7f0f0e3817dfb6b9341534a94296943b61521ff6dbcdf3310"
+  },
+  "Revision_analysis_as_received": {
+    "file": "RevDocs1.zip",
+    "size_bytes": 373676049,
+    "sha256": "0c87b06277b686aa8a6ee234b8adf7820df2ad4717dae32ef73073b77712aa8b"
+  }
+}

@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(data.table); library(ggplot2)})
 log_step("10", "Generating publication tables and figures from computed outputs")
 r <- fread("results/candidate_lists/ranked_targets.csv")
@@ -9,4 +9,3 @@ p <- ggplot(top[1:min(20,.N)], aes(x=reorder(gene_id, ensemble_score), y=ensembl
 ggsave("figures/Figure4_top_candidates.pdf", p, width=7, height=6)
 ggsave("figures/Figure4_top_candidates.png", p, width=7, height=6, dpi=600)
 ggsave("figures/Figure4_top_candidates.tiff", p, width=7, height=6, dpi=600, compression="lzw")
-

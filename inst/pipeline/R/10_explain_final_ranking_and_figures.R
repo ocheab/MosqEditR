@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 10_explain_final_ranking_and_figures.R
 #
 # MosqEdit-R Manuscript 1
@@ -534,7 +534,7 @@ fwrite(
 )
 
 # -----------------------------------------------------------------------------
-# 7. Figure 10A â€” Step 08 model performance
+# 7. Figure 10A — Step 08 model performance
 # -----------------------------------------------------------------------------
 
 metrics_plot <- copy(metrics)
@@ -600,7 +600,7 @@ p10a <- ggplot(
         y = "Mean apparent AUPRC",
         shape = "PU consensus model",
         size = "Mean NDCG@100",
-        title = "Cross-validated positiveâ€“unlabeled model performance",
+        title = "Cross-validated positive–unlabeled model performance",
         subtitle = "Observed-positive versus unlabeled discrimination"
     ) +
     theme_classic(base_size = 11) +
@@ -617,7 +617,7 @@ save_plot_pair(
 )
 
 # -----------------------------------------------------------------------------
-# 8. Figure 10B â€” top-20 evidence heatmap
+# 8. Figure 10B — top-20 evidence heatmap
 # -----------------------------------------------------------------------------
 
 top20_plot <- copy(top20)
@@ -725,7 +725,7 @@ save_plot_pair(
 )
 
 # -----------------------------------------------------------------------------
-# 9. Figure 10C â€” rank movement among top-50 novel candidates
+# 9. Figure 10C — rank movement among top-50 novel candidates
 # -----------------------------------------------------------------------------
 
 rank_top50 <- explain[
@@ -792,7 +792,7 @@ save_plot_pair(
 )
 
 # -----------------------------------------------------------------------------
-# 10. Figure 10D â€” external benchmark evidence heatmap
+# 10. Figure 10D — external benchmark evidence heatmap
 # -----------------------------------------------------------------------------
 
 bench_plot <- copy(benchmark_evidence)
@@ -1225,4 +1225,3 @@ log_step(
     "10",
     "Integrated-ranking explainability and publication figures completed successfully"
 )
-

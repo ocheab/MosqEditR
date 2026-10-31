@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(biomaRt); library(data.table); library(stringr); library(tidyr); library(curl)})
 log_step("03", "Acquiring Anopheles-Drosophila orthology and pinned FlyBase phenotype labels")
 
@@ -78,4 +78,3 @@ gene_ev <- gene_ev[, .(
 ), by=gene_id]
 fwrite(gene_ev, "data_processed/03_gene_orthology_phenotypes.csv")
 write_checksum(c("data_processed/03_anopheles_dmel_orthology.csv", "data_processed/03_gene_orthology_phenotypes.csv", phen_file, map_file), "logs/03_checksums.tsv")
-

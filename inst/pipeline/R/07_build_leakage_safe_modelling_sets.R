@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 07_build_leakage_safe_modelling_sets.R
 #
 # MosqEdit-R Manuscript 1
@@ -17,7 +17,7 @@
 #
 # IMPORTANT CONCEPT
 # -----------------
-# The supervised signal available at this stage is POSITIVEâ€“UNLABELED (PU):
+# The supervised signal available at this stage is POSITIVE–UNLABELED (PU):
 #
 #   positive = strict mapped FlyBase female-sterility evidence
 #   unlabeled = every other eligible gene
@@ -809,7 +809,7 @@ shared_columns <- existing_columns(
 
 
 # -----------------------------------------------------------------------------
-# 10. M1 â€” expression-only PU matrix
+# 10. M1 — expression-only PU matrix
 # -----------------------------------------------------------------------------
 
 m1_predictors <- unique(
@@ -868,7 +868,7 @@ M1[
 
 
 # -----------------------------------------------------------------------------
-# 11. M2 â€” expression + orthology structure
+# 11. M2 — expression + orthology structure
 # -----------------------------------------------------------------------------
 
 m2_predictors <- unique(
@@ -918,7 +918,7 @@ M2[
 
 
 # -----------------------------------------------------------------------------
-# 12. M3 â€” expression + orthology + neutral annotation
+# 12. M3 — expression + orthology + neutral annotation
 # -----------------------------------------------------------------------------
 
 m3_predictors <- unique(
@@ -1303,7 +1303,7 @@ data.table::setorder(
 
 
 # -----------------------------------------------------------------------------
-# 16. Integrity checks â€” no benchmark leakage
+# 16. Integrity checks — no benchmark leakage
 # -----------------------------------------------------------------------------
 
 if (
@@ -1854,4 +1854,3 @@ log_step(
     "07",
     "Leakage-safe PU modelling datasets completed successfully"
 )
-

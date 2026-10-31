@@ -1,4 +1,4 @@
-﻿on:
+on:
   push:
     branches: [main, master]
   pull_request:
@@ -26,4 +26,3 @@ jobs:
           extra-packages: any::rcmdcheck
           needs: check
       - uses: r-lib/actions/check-r-package@v2
-

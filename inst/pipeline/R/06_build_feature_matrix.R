@@ -1,8 +1,8 @@
-﻿# =============================================================================
+# =============================================================================
 # 06_build_feature_matrix_FULL_CORRECTED.R
 #
 # MosqEdit-R Manuscript 1
-# STEP 06 â€” AUTHORITATIVE MASTER FEATURE MATRIX
+# STEP 06 — AUTHORITATIVE MASTER FEATURE MATRIX
 #
 # Builds one auditable gene-level matrix on the COMPLETE Step 01 AgamP4
 # universe. Step 05 CRISPR variables are targeted-shortlist-only and remain NA
@@ -259,7 +259,7 @@ master[
 ]
 
 # -----------------------------------------------------------------------------
-# 6. Merge Steps 02â€“05, adding only genuinely new fields
+# 6. Merge Steps 02–05, adding only genuinely new fields
 # -----------------------------------------------------------------------------
 
 res02 <- merge_new_columns(
@@ -1232,4 +1232,3 @@ log_step(
     "06",
     "Auditable master gene-feature matrix completed successfully"
 )
-

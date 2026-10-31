@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 15_ablation_and_validation.R
 # MosqEdit-R Manuscript 1
-# STEP 15 â€” Evidence ablation, rank concordance, and validation analyses
+# STEP 15 — Evidence ablation, rank concordance, and validation analyses
 # PURE R
 # =============================================================================
 
@@ -348,7 +348,7 @@ p15c <- ggplot(
     labs(
         x = "Mean apparent AUROC",
         y = "Mean apparent AUPRC",
-        title = "PU model performance across M1â€“M3 feature sets"
+        title = "PU model performance across M1–M3 feature sets"
     ) +
     theme_classic(base_size = 11)
 
@@ -443,4 +443,3 @@ cat(
 print(ablation_summary)
 
 log_step("15", "Evidence ablation and validation completed successfully")
-

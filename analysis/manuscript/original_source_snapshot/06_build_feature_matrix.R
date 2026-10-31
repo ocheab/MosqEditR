@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(data.table)})
 log_step("06", "Building auditable master gene-feature matrix")
 files <- c(annotation="data_processed/01_gene_annotation.csv",
@@ -17,4 +17,3 @@ x <- merge(x, land[, .(gene_id, landmark_class=strategy)], by="gene_id", all.x=T
 x[, analysis_maturity := "RECOMPUTED"]
 fwrite(x, "data_processed/master_gene_feature_matrix.csv")
 write_checksum("data_processed/master_gene_feature_matrix.csv", "logs/06_checksums.tsv")
-

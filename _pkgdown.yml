@@ -1,4 +1,4 @@
-﻿url: https://ocheab.github.io/MosqEditR/
+url: https://YOUR_GITHUB_USERNAME.github.io/MosqEditR/
 template:
   bootstrap: 5
 navbar:
@@ -8,9 +8,8 @@ navbar:
   components:
     github:
       icon: fab fa-github
-      href: https://github.com/ocheab/MosqEditR
+      href: https://github.com/YOUR_GITHUB_USERNAME/MosqEditR
 articles:
   - title: Getting started
     contents:
       - getting-started
-

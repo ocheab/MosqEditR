@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 14_integrate_population_genomics.R
 # MosqEdit-R Manuscript 1
-# STEP 14 â€” Integrate REAL targeted population-genomic validation
+# STEP 14 — Integrate REAL targeted population-genomic validation
 # PURE R
 # =============================================================================
 #
@@ -378,4 +378,3 @@ cat(
 print(qc)
 
 log_step("14", "Population-genomic integration completed successfully")
-

@@ -1,4 +1,4 @@
-﻿project: MosqEdit-R Manuscript 1
+project: MosqEdit-R Manuscript 1
 build_date: 2026-09-11
 species_primary: Anopheles gambiae
 genome_build: AgamP4
@@ -28,4 +28,3 @@ validation:
 audit:
   allowed_states: [SOURCE, SOURCE_ROUNDED, RECOMPUTED, MODEL, PENDING]
   manual_model_values_forbidden: true
-

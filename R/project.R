@@ -1,4 +1,4 @@
-﻿#' List manuscript-pipeline steps shipped with MosqEditR
+#' List manuscript-pipeline steps shipped with MosqEditR
 #'
 #' @return A data.frame describing the available analysis scripts.
 #' @export
@@ -235,4 +235,3 @@ mosqedit_example_candidates <- function() {
 mosqedit_version <- function() {
   utils::packageVersion("MosqEditR")
 }
-

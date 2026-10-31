@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 04_preliminary_genomewide_ranking.R
 #
 # MosqEdit-R Manuscript 1
@@ -2166,4 +2166,3 @@ log_step(
     "04",
     "Preliminary genome-wide prioritisation completed successfully"
 )
-

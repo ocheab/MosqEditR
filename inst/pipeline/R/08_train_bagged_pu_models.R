@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 08_train_bagged_pu_models.R
 # MosqEdit-R Manuscript 1
-# STEP 08 â€” repeated cross-fitted bagged positiveâ€“unlabeled learning
+# STEP 08 — repeated cross-fitted bagged positive–unlabeled learning
 # =============================================================================
 
 source("R/helpers.R")
@@ -1525,4 +1525,3 @@ log_step(
   "08",
   "Repeated cross-fitted bagged PU model benchmarking completed successfully"
 )
-

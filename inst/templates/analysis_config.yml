@@ -1,4 +1,4 @@
-﻿project: MosqEdit-R Manuscript 1
+project: MosqEdit-R Manuscript 1
 species_primary: Anopheles gambiae
 genome_build: AgamP4
 ensembl_metazoa_release: 63
@@ -30,4 +30,3 @@ population_genomics:
   role: targeted_second_stage_validation
   status: pending_real_data
   never_impute_or_fabricate: true
-

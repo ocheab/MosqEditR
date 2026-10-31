@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(reticulate); library(data.table)})
 log_step("04", "Computing resumable Ag1000G Phase 3 gene-level variation summaries")
 # MalariaGEN's maintained Python API is called through reticulate. The companion routine
@@ -17,4 +17,3 @@ var <- as.data.table(var)
 if (!nrow(var)) stop("Ag1000G variation routine returned zero genes.")
 fwrite(var, "data_processed/04_ag1000g_gene_variation.csv")
 write_checksum(c("data_raw/ag3_gene_variation_cache.csv", "data_processed/04_ag1000g_gene_variation.csv"), "logs/04_checksums.tsv")
-

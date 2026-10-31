@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 13_freeze_population_validation_panel.R
 # MosqEdit-R Manuscript 1
-# STEP 13 â€” Freeze robust targeted population-genomic validation panel
+# STEP 13 — Freeze robust targeted population-genomic validation panel
 # PURE R
 # =============================================================================
 
@@ -423,4 +423,3 @@ cat(
 print(qc)
 
 log_step("13", "Targeted population-genomic validation panel completed")
-

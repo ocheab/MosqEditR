@@ -1,4 +1,4 @@
-﻿options(stringsAsFactors = FALSE)
+options(stringsAsFactors = FALSE)
 set.seed(20260911)
 required_cran <- c("renv","here","data.table","dplyr","tidyr","stringr","purrr","readr","readxl","writexl","jsonlite","digest","curl","httr2","ggplot2","patchwork","ranger","glmnet","xgboost","pROC","yardstick","rsample","recipes","parsnip","workflows","tune","dials","vip","DALEX","fastshap","igraph","WGCNA","future","furrr","reticulate")
 required_bioc <- c("GEOquery","Biobase","limma","biomaRt","AnnotationDbi")
@@ -15,4 +15,3 @@ dir.create("results/tables", showWarnings=FALSE, recursive=TRUE)
 dir.create("results/candidate_lists", showWarnings=FALSE, recursive=TRUE)
 dir.create("logs", showWarnings=FALSE, recursive=TRUE)
 writeLines(capture.output(Sys.time(), sessionInfo()), "logs/setup_environment.txt")
-

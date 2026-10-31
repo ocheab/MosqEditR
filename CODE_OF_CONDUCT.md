@@ -1,4 +1,3 @@
-﻿# Code of Conduct
+# Code of Conduct
 
 Please interact professionally, respectfully, and constructively.
-

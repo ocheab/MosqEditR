@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(data.table)})
 log_step("05", "Preparing CRISPR target-site editability layer")
 # Preferred path: recompute target-site statistics against the same Ag3 population layer used in this project.
@@ -13,4 +13,3 @@ ann <- fread("data_processed/01_gene_annotation.csv")
 out <- ann[, .(gene_id)]
 out[, `:=`(crispr_potential_target_count=NA_integer_, crispr_good_target_count_1pct=NA_integer_, has_good_target_1pct=NA)]
 fwrite(out, "data_processed/05_crispr_editability.csv")
-

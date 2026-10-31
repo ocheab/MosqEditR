@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 12_bootstrap_rank_uncertainty.R
 #
 # MosqEdit-R Manuscript 1
@@ -1039,7 +1039,7 @@ if (
 # 11. Publication figures
 # -----------------------------------------------------------------------------
 
-# Figure 12A â€” top-50 novel rank intervals
+# Figure 12A — top-50 novel rank intervals
 plot_top50 <- uncertainty[
     is_external_benchmark == FALSE &
         final_prepopulation_rank <= 50
@@ -1088,7 +1088,7 @@ p12a <- ggplot(
         x = "Rank",
         y = NULL,
         title = "PU-resampling uncertainty for the top 50 novel candidates",
-        subtitle = "Point = bootstrap median; Ã— = frozen Step 09 rank; line = empirical 95% rank interval"
+        subtitle = "Point = bootstrap median; × = frozen Step 09 rank; line = empirical 95% rank interval"
     ) +
     theme_classic(base_size = 10)
 
@@ -1100,7 +1100,7 @@ save_plot_pair(
     height = 12
 )
 
-# Figure 12B â€” top-k probabilities for top-30 novel genes
+# Figure 12B — top-k probabilities for top-30 novel genes
 plot_topk <- uncertainty[
     is_external_benchmark == FALSE &
         final_prepopulation_rank <= 30,
@@ -1202,7 +1202,7 @@ save_plot_pair(
     height = 9.5
 )
 
-# Figure 12C â€” frozen final rank vs bootstrap median rank
+# Figure 12C — frozen final rank vs bootstrap median rank
 plot_compare <- uncertainty[
     is_external_benchmark == FALSE
 ]
@@ -1240,7 +1240,7 @@ save_plot_pair(
     height = 6.5
 )
 
-# Figure 12D â€” benchmark uncertainty
+# Figure 12D — benchmark uncertainty
 benchmark_plot <- copy(
     benchmark_uncertainty
 )
@@ -1660,4 +1660,3 @@ log_step(
     "12",
     "PU-resampling rank-uncertainty analysis completed successfully"
 )
-

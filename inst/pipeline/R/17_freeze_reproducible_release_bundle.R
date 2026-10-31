@@ -1,7 +1,7 @@
-﻿# =============================================================================
+# =============================================================================
 # 17_freeze_reproducible_release_bundle.R
 # MosqEdit-R Manuscript 1
-# STEP 17 â€” Freeze reproducible analysis release bundle
+# STEP 17 — Freeze reproducible analysis release bundle
 # PURE R
 # =============================================================================
 #
@@ -214,23 +214,23 @@ readme <- c(
     "",
     "## Analysis architecture",
     "",
-    "1. Step 01 â€” AgamP4 annotation universe",
-    "2. Step 02 â€” MozAtlas expression",
-    "3. Step 03 â€” Drosophila orthology/FlyBase phenotype evidence",
-    "4. Step 04 â€” preliminary biological ranking",
-    "5. Step 05 â€” exon-aware SpCas9 reference editability",
-    "6. Step 06 â€” auditable master feature matrix",
-    "7. Step 07 â€” leakage-safe PU modelling sets",
-    "8. Step 08 â€” repeated cross-fitted bagged PU learning",
-    "9. Step 09 â€” robust PU consensus + CRISPR-aware ranking",
-    "10. Step 10 â€” integrated ranking explainability",
-    "11. Step 11 â€” model-specific SHAP/permutation explainability",
-    "12. Step 12 â€” PU-resampling rank uncertainty",
-    "13. Step 13 â€” targeted population validation panel",
-    "14. Step 14 â€” targeted population-genomic robustness integration",
-    "15. Step 15 â€” ablation and validation analysis",
-    "16. Step 16 â€” publication tables and figures",
-    "17. Step 17 â€” frozen reproducible release",
+    "1. Step 01 — AgamP4 annotation universe",
+    "2. Step 02 — MozAtlas expression",
+    "3. Step 03 — Drosophila orthology/FlyBase phenotype evidence",
+    "4. Step 04 — preliminary biological ranking",
+    "5. Step 05 — exon-aware SpCas9 reference editability",
+    "6. Step 06 — auditable master feature matrix",
+    "7. Step 07 — leakage-safe PU modelling sets",
+    "8. Step 08 — repeated cross-fitted bagged PU learning",
+    "9. Step 09 — robust PU consensus + CRISPR-aware ranking",
+    "10. Step 10 — integrated ranking explainability",
+    "11. Step 11 — model-specific SHAP/permutation explainability",
+    "12. Step 12 — PU-resampling rank uncertainty",
+    "13. Step 13 — targeted population validation panel",
+    "14. Step 14 — targeted population-genomic robustness integration",
+    "15. Step 15 — ablation and validation analysis",
+    "16. Step 16 — publication tables and figures",
+    "17. Step 17 — frozen reproducible release",
     "",
     "## Population genomics",
     "",
@@ -334,4 +334,3 @@ cat(
 )
 
 log_step("17", "Reproducible analysis release completed successfully")
-

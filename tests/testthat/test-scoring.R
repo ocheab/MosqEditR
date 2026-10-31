@@ -1,4 +1,4 @@
-﻿test_that("tau behaves on simple vectors", {
+test_that("tau behaves on simple vectors", {
   expect_equal(mosqedit_tau(c(10, 0, 0)), 1)
   expect_equal(mosqedit_tau(c(1, 1, 1)), 0)
   expect_true(is.na(mosqedit_tau(1)))
@@ -27,4 +27,3 @@ test_that("missing domains are renormalized, not zero-imputed", {
 test_that("ranking is deterministic", {
   expect_equal(mosqedit_rank(c(0.8, 0.8, 0.5), c("B", "A", "C")), c(2L, 1L, 3L))
 })
-

@@ -1,4 +1,4 @@
-﻿source("R/helpers.R")
+source("R/helpers.R")
 suppressPackageStartupMessages({library(biomaRt); library(data.table)})
 log_step("01", "Querying Ensembl Metazoa/Anopheles annotation")
 # Dataset names may change between Ensembl releases; discover rather than hard-code silently.
@@ -19,4 +19,3 @@ genes <- ann[, .(gene_symbol=first_nonempty(gene_symbol), chromosome=first_nonem
 fwrite(ann, "data_raw/ensembl_anopheles_annotation_transcripts.csv")
 fwrite(genes, "data_processed/01_gene_annotation.csv")
 write_checksum(c("data_raw/ensembl_anopheles_annotation_transcripts.csv","data_processed/01_gene_annotation.csv"), "logs/01_checksums.tsv")
-

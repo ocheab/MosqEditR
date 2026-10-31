@@ -1,4 +1,4 @@
-﻿# Runtime requirements and pre-submission gates
+# Runtime requirements and pre-submission gates
 
 The scripts in this directory are designed for an external R-enabled environment with network access. They have not been executed in the current build environment because R is unavailable here.
 
@@ -11,4 +11,3 @@ Before manuscript submission:
 6. Replace PENDING rows in `results/candidate_lists/ranked_targets.csv` only with code-generated values.
 7. Recreate all final tables/figures and update the manuscript from code-generated outputs.
 8. Run `R/99_capture_session.R` so `sessionInfo.txt` and `renv.lock` represent the executed environment.
-

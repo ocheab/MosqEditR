@@ -1,9 +1,9 @@
-﻿Package: MosqEditR
+Package: MosqEditR
 Type: Package
 Title: Explainable Prioritization of Gene-Editing Targets in Anopheles gambiae
 Version: 0.1.0
 Authors@R: c(
-    person("Dr. Oche George", "Ambrose", email = "ocheab1@gmail.com",
+    person("MosqEdit-R", "Team", email = "maintainer@example.org",
            role = c("aut", "cre"))
   )
 Description: Provides reusable scoring, ranking, project-initialization, and
@@ -28,7 +28,6 @@ Suggests:
     knitr,
     rmarkdown
 Config/testthat/edition: 3
-URL: https://github.com/ocheab/MosqEditR
-BugReports: https://github.com/ocheab/MosqEditR/issues
+URL: https://github.com/YOUR_GITHUB_USERNAME/MosqEditR
+BugReports: https://github.com/YOUR_GITHUB_USERNAME/MosqEditR/issues
 VignetteBuilder: knitr
-

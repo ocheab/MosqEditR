@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 03_acquire_orthology_flybase.R
 #
 # MosqEdit-R Manuscript 1
@@ -1644,4 +1644,3 @@ log_step(
   "03",
   "Orthology and FlyBase phenotype evidence acquisition completed successfully"
 )
-

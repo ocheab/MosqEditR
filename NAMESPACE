@@ -1,4 +1,4 @@
-﻿export(mosqedit_example_candidates)
+export(mosqedit_example_candidates)
 export(mosqedit_extdata)
 export(mosqedit_init)
 export(mosqedit_integrated_score)
@@ -11,4 +11,3 @@ export(mosqedit_run_step)
 export(mosqedit_tau)
 export(mosqedit_validate_project)
 export(mosqedit_version)
-

@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # 11_model_specific_explainability.R
 #
 # MosqEdit-R Manuscript 1
@@ -987,7 +987,7 @@ for (
 
 
 # -----------------------------------------------------------------------------
-# 8. Stratified folds â€” identical logic to Step 08
+# 8. Stratified folds — identical logic to Step 08
 # -----------------------------------------------------------------------------
 
 make_stratified_folds <- function(
@@ -1049,7 +1049,7 @@ make_stratified_folds <- function(
 
 
 # -----------------------------------------------------------------------------
-# 9. Fold-safe preprocessing â€” identical design to Step 08
+# 9. Fold-safe preprocessing — identical design to Step 08
 # -----------------------------------------------------------------------------
 
 fit_preprocessor <- function(
@@ -4650,4 +4650,3 @@ log_step(
     "11",
     "Cross-fitted model-specific explainability completed successfully"
 )
-

@@ -1,4 +1,4 @@
-﻿#' Tissue-specificity Tau index
+#' Tissue-specificity Tau index
 #'
 #' Compute the Tau tissue-specificity index from a numeric expression vector.
 #' Higher values indicate greater concentration of expression in a subset of
@@ -156,4 +156,3 @@ mosqedit_integrated_score <- function(
   utils::write.table(tab, outfile, sep = "\t", row.names = FALSE, quote = FALSE)
   invisible(tab)
 }
-

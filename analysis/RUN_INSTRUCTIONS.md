@@ -1,4 +1,4 @@
-﻿# MosqEdit-R execution guide
+# MosqEdit-R execution guide
 
 ## 1. Prerequisites
 - R 4.4 or newer recommended.
@@ -44,4 +44,3 @@ Do not treat the current PENDING candidate file as a result. Before submission, 
 - model diagnostics, top-k validation, and bootstrap stability were generated;
 - `R/99_capture_session.R` has replaced the bootstrap `renv.lock` and `sessionInfo.txt`;
 - the manuscript's locked Results section was updated only from code-generated outputs.
-

@@ -1,4 +1,4 @@
-﻿# MosqEditR
+# MosqEditR
 
 **MosqEditR** is an installable R package plus reproducible analysis templates for explainable prioritization of candidate gene-editing targets in *Anopheles gambiae*.
 
@@ -15,14 +15,14 @@ The framework keeps distinct evidence layers separate:
 
 ```r
 install.packages("pak")
-pak::pak("https://github.com/ocheab/MosqEditR")
+pak::pak("YOUR_GITHUB_USERNAME/MosqEditR")
 ```
 
 or:
 
 ```r
 install.packages("remotes")
-remotes::install_github("https://github.com/ocheab/MosqEditR")
+remotes::install_github("YOUR_GITHUB_USERNAME/MosqEditR")
 ```
 
 Then:
@@ -83,22 +83,22 @@ Later stages require their upstream files. Several acquisition steps require int
 
 ```text
 MosqEditR/
-DESCRIPTION
-NAMESPACE
-R/                         # installable package functions
-man/                       # help pages
-tests/testthat/            # unit tests
-vignettes/                 # tutorials
-inst/
-extdata/                   # small examples/landmarks
-pipeline/R/                # manuscript workflow templates
-templates/                 # config + metadata templates
-analysis/                  # manuscript reproducibility material
-data-raw/                  # package-data preparation scripts
-.github/workflows/         # R CMD check + pkgdown
-CITATION.cff
-CONTRIBUTING.md
-â””â”€â”€ _pkgdown.yml
+├── DESCRIPTION
+├── NAMESPACE
+├── R/                         # installable package functions
+├── man/                       # help pages
+├── tests/testthat/            # unit tests
+├── vignettes/                 # tutorials
+├── inst/
+│   ├── extdata/               # small examples/landmarks
+│   ├── pipeline/R/            # manuscript workflow templates
+│   └── templates/             # config + metadata templates
+├── analysis/                  # manuscript reproducibility material
+├── data-raw/                  # package-data preparation scripts
+├── .github/workflows/         # R CMD check + pkgdown
+├── CITATION.cff
+├── CONTRIBUTING.md
+└── _pkgdown.yml
 ```
 
 ## Scientific interpretation
@@ -117,7 +117,8 @@ After installation:
 citation("MosqEditR")
 ```
 
+Before public release, replace the placeholder GitHub username, maintainer email, authors, manuscript DOI, and repository DOI in `DESCRIPTION` and `CITATION.cff`.
+
 ## License
 
 MIT by default in this repository template. Change it before release if your institution or collaborators require another license.
-

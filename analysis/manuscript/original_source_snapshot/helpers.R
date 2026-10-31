@@ -1,4 +1,4 @@
-﻿log_step <- function(step, msg) {
+log_step <- function(step, msg) {
   dir.create("logs", showWarnings=FALSE, recursive=TRUE)
   line <- sprintf("%s\t%s\t%s", format(Sys.time(), "%Y-%m-%dT%H:%M:%S%z"), step, msg)
   cat(line, "\n")
@@ -17,4 +17,3 @@ write_checksum <- function(files, outfile) {
   h <- data.frame(file=files, sha256=vapply(files, digest::digest, character(1), algo="sha256", file=TRUE))
   write.table(h, outfile, sep="\t", row.names=FALSE, quote=FALSE)
 }
-
