@@ -15,14 +15,14 @@ The framework keeps distinct evidence layers separate:
 
 ```r
 install.packages("pak")
-pak::pak("YOUR_GITHUB_USERNAME/MosqEditR")
+pak::pak("ocheab/MosqEditR")
 ```
 
 or:
 
 ```r
 install.packages("remotes")
-remotes::install_github("YOUR_GITHUB_USERNAME/MosqEditR")
+remotes::install_github("ocheab/MosqEditR")
 ```
 
 Then:
