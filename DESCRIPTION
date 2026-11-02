@@ -21,9 +21,10 @@ Depends:
     R (>= 4.2.0)
 Imports:
     utils,
-    stats,
     tools
 Suggests:
+    BiocManager,
+    digest,
     testthat (>= 3.0.0),
     knitr,
     rmarkdown

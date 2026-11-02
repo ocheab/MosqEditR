@@ -8,3 +8,5 @@
 ^_pkgdown\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.git$
+^CITATION\.cff$
